@@ -24,12 +24,15 @@ jobs:
             - uses: actions/checkout@v7
 
             - name: Set up Theos
-              uses: waruhachi/theos-action@v2.6.3
+              uses: waruhachi/theos-action@v2.6.5
               with:
                   theos-src: "waruhachi/theos"
                   theos-branch: "main"
                   sdks-src: "waruhachi/sdks"
                   sdks-branch: "main"
+                  shook: "true"
+                  shook-src: "ginsudev/Shook"
+                  shook-branch: "main"
 
             - name: Build Package
               shell: bash
