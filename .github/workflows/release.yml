@@ -31,7 +31,7 @@ jobs:
                   sdks-src: "waruhachi/sdks"
                   sdks-branch: "main"
                   comet: "true"
-                  comet-src: "waruhachi/Shook"
+                  comet-src: "waruhachi/Comet"
                   comet-branch: "main"
                   shook: "true"
                   shook-src: "waruhachi/Shook"
