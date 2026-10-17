@@ -30,8 +30,11 @@ jobs:
                   theos-branch: "main"
                   sdks-src: "waruhachi/sdks"
                   sdks-branch: "main"
+                  comet: "true"
+                  comet-src: "waruhachi/Shook"
+                  comet-branch: "main"
                   shook: "true"
-                  shook-src: "ginsudev/Shook"
+                  shook-src: "waruhachi/Shook"
                   shook-branch: "main"
 
             - name: Build Package
