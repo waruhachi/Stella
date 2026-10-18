@@ -1,10 +1,9 @@
 import Foundation
 import Comet
-import libroot
 
 final class PreferenceStorage: ObservableObject {
     static var shared = PreferenceStorage()
-    private static let registry: String = jbRootPath("/var/mobile/Library/Preferences/com.yan.stella.prefs.plist")
+    private static let registry: String = jbroot("/var/mobile/Library/Preferences/com.yan.stella.prefs.plist")
 
     @Published(key: "enabled", registry: registry) var isEnabled = true
     @Published(key: "lockscreen", registry: registry) var lockscreen = true

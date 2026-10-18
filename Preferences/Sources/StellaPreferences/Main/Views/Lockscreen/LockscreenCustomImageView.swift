@@ -1,5 +1,4 @@
 import SwiftUI
-import libroot
 
 struct LockscreenCustomImageView: View {
     @EnvironmentObject var preferenceStorage: PreferenceStorage

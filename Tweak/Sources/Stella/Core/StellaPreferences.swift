@@ -1,11 +1,10 @@
 import Foundation
-import libroot
 
 final class StellaPreferences {
     private(set) var settings: StellaSettings!
     static let shared = StellaPreferences()
 
-    private let preferencesPath = jbRootPath("/var/mobile/Library/Preferences/com.yan.stella.prefs.plist")
+    private let preferencesPath = jbroot("/var/mobile/Library/Preferences/com.yan.stella.prefs.plist")
 
     func loadSettings() throws {
         if let data = FileManager.default.contents(atPath: preferencesPath) {

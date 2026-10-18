@@ -1,5 +1,4 @@
 import UIKit
-import libroot
 
 class SnowFactory {
     static var deviceBounds: CGRect {
@@ -54,7 +53,7 @@ class SnowFactory {
     }
 
     static var defaultSnowflakeImage: CGImage {
-        return UIImage(contentsOfFile: jbRootPath("/Library/Application Support/Stella.bundle/snowflake.png"))!.cgImage!
+        return UIImage(contentsOfFile: jbroot("/Library/Application Support/Stella.bundle/snowflake.png"))!.cgImage!
     }
 
     private static func getCustomImage(for name: String, settings: StellaSettings) -> UIImage? {

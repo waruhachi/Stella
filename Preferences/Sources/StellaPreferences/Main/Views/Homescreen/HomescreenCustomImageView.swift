@@ -1,5 +1,4 @@
 import SwiftUI
-import libroot
 
 struct HomescreenCustomImageView: View {
     @EnvironmentObject var preferenceStorage: PreferenceStorage

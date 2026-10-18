@@ -1,5 +1,4 @@
 import SwiftUI
-import libroot
 import Comet
 
 struct RootView: View {
@@ -33,7 +32,7 @@ struct RootView: View {
         VStack {
             Spacer()
             VStack {
-                Image(uiImage: UIImage(contentsOfFile: jbRootPath("/Library/PreferenceBundles/StellaPreferences.bundle/stella.png"))!)
+                Image(uiImage: UIImage(contentsOfFile: jbroot("/Library/PreferenceBundles/StellaPreferences.bundle/stella.png"))!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100)
@@ -104,16 +103,16 @@ struct RootView: View {
 
     private var creditSection: some View {
         Section {
-            CreditCell(imagePath: jbRootPath("/Library/PreferenceBundles/StellaPreferences.bundle/yan.png"), username: "yandevelop", description: "@yandevelop")
+            CreditCell(imagePath: jbroot("/Library/PreferenceBundles/StellaPreferences.bundle/yan.png"), username: "yandevelop", description: "@yandevelop")
             LinkCell(title: "Donate", subtitle: "Support my work!", url: "https://ko-fi.com/yandevelop")
         }
     }
 
     private var tweakSection: some View {
         Section(header: Text("My other Tweaks")) {
-            LinkCell(iconPath: jbRootPath("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/bloom@3x.png"), title: "Bloom", subtitle: "Animate your notifications with style", url: "sileo://package/com.yan.bloom", fallbackUrl: "https://havoc.app/package/bloom")
-            LinkCell(iconPath: jbRootPath("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/fiona@3x.png"), title: "Fiona", subtitle: "Make your tab bar float", url: "sileo://package/com.yan.fiona", fallbackUrl: "https://havoc.app/package/fiona")
-            LinkCell(iconPath: jbRootPath("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/ring@3x.png"), title: "Ring", subtitle: "Effortlessly control your ringer volume", url: "sileo://package/com.yan.ring", fallbackUrl: "https://havoc.app/package/ring")
+            LinkCell(iconPath: jbroot("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/bloom@3x.png"), title: "Bloom", subtitle: "Animate your notifications with style", url: "sileo://package/com.yan.bloom", fallbackUrl: "https://havoc.app/package/bloom")
+            LinkCell(iconPath: jbroot("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/fiona@3x.png"), title: "Fiona", subtitle: "Make your tab bar float", url: "sileo://package/com.yan.fiona", fallbackUrl: "https://havoc.app/package/fiona")
+            LinkCell(iconPath: jbroot("/Library/PreferenceBundles/StellaPreferences.bundle/tweaks/ring@3x.png"), title: "Ring", subtitle: "Effortlessly control your ringer volume", url: "sileo://package/com.yan.ring", fallbackUrl: "https://havoc.app/package/ring")
         }
     }
 
