@@ -1,4 +1,5 @@
 BUNDLE_NAME = StellaPreferences
+THEOS_INCLUDE_PATH := $(THEOS_VENDOR_INCLUDE_PATH)
 
 $(BUNDLE_NAME)_FRAMEWORKS = Comet
 $(BUNDLE_NAME)_FILES = $(shell find Sources/StellaPreferences -name '*.swift') $(shell find Sources/StellaPreferencesC -name '*.m' -o -name '*.c' -o -name '*.mm' -o -name '*.cpp')
